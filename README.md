@@ -72,11 +72,11 @@ Railway can deploy this Next.js project directly; no Dockerfile is needed.
 
 1. Open the deployed service in Railway and go to **Settings → Networking → Custom Domain**.
 2. Add `offmyplate.io`, then add `www.offmyplate.io` if both should resolve.
-3. Railway will display the exact DNS record required for each hostname. Add those records at the domain's DNS provider. The root domain will typically use the CNAME-flattening/ALIAS record Railway specifies; `www` typically uses a CNAME.
-4. Remove any conflicting A, AAAA, or CNAME records for the same hostname.
-5. Wait for Railway to verify the records and issue the TLS certificate.
+3. Railway will display a CNAME record and a TXT ownership-verification record for each custom domain. Add both records at the domain's DNS provider exactly as shown.
+4. For the root domain, use the provider's CNAME-flattening or ALIAS/ANAME support if it does not allow a regular CNAME at the apex. Remove any conflicting A, AAAA, or CNAME records for the same hostname.
+5. Wait for Railway to show the domain as verified and issue the TLS certificate. DNS propagation can take up to 72 hours.
 
-DNS targets can change, so use the values shown in the Railway project rather than copying a target from another service. Choose one canonical hostname and redirect the other to it; this site currently declares `https://offmyplate.io` as canonical.
+Both the CNAME and TXT records are required; Railway can return a 404 until ownership is verified. DNS targets can change, so use the values shown in the Railway project rather than copying a target from another service. Choose one canonical hostname and redirect the other to it; this site currently declares `https://offmyplate.io` as canonical.
 
 ## Search engine submission
 
