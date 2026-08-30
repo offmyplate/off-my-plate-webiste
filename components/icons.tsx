@@ -68,16 +68,3 @@ export function Icon({ name, ...props }: SVGProps<SVGSVGElement> & { name: IconN
     </svg>
   );
 }
-
-export function LogoMark() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 36 36" className="logo-mark">
-      <path
-        fill="currentColor"
-        d="M18 3.5 29.8 10v13L18 29.5 6.2 23V10L18 3.5Zm0 4.2-8.1 4.5v8.6l8.1 4.5 8.1-4.5v-8.6L18 7.7Z"
-      />
-      <circle cx="18" cy="16.5" r="3.2" fill="currentColor" />
-      <path d="M18 20v5.2" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-    </svg>
-  );
-}

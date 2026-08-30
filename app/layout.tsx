@@ -6,7 +6,7 @@ const siteUrl = "https://offmyplate.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Off My Plate | Custom AI Workflow Automation",
+  title: "Off My Plate",
   description:
     "Off My Plate builds custom AI workflows that connect your tools, data, and processes—so your team spends less time on manual work.",
   alternates: { canonical: "/" },

@@ -1,6 +1,7 @@
 import { CtaLink } from "@/components/cta-link";
+import { BrandMark } from "@/components/brand-mark";
 import { Header } from "@/components/header";
-import { Icon, LogoMark } from "@/components/icons";
+import { Icon } from "@/components/icons";
 import { WorkflowCards } from "@/components/workflow-cards";
 import { WorkflowVisual } from "@/components/workflow-visual";
 import { contactUrl } from "@/lib/site";
@@ -117,7 +118,7 @@ export default function Home() {
 
       <footer>
         <div className="container footer-wrap">
-          <a className="brand" href="#top" aria-label="Back to top"><LogoMark /><span>Off My Plate</span></a>
+          <a className="brand" href="#top" aria-label="Back to top"><BrandMark /><span className="brand-name">Off My Plate</span></a>
           <p>Custom AI workflows for work that shouldn&apos;t be manual.</p>
           <a href="mailto:contact@offmyplate.io">contact@offmyplate.io</a>
         </div>

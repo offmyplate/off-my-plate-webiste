@@ -1,5 +1,5 @@
 import { CtaLink } from "./cta-link";
-import { LogoMark } from "./icons";
+import { BrandMark } from "./brand-mark";
 import { contactUrl } from "@/lib/site";
 
 export function Header() {
@@ -7,8 +7,8 @@ export function Header() {
     <header className="site-header">
       <div className="container nav-wrap">
         <a className="brand" href="#top" aria-label="Off My Plate home">
-          <LogoMark />
-          <span>Off My Plate</span>
+          <BrandMark preload />
+          <span className="brand-name">Off My Plate</span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#automate">What we automate</a>

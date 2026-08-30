@@ -34,8 +34,9 @@ svg { display: block; }
   backdrop-filter: blur(12px);
 }
 .nav-wrap { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 760; letter-spacing: -.025em; white-space: nowrap; }
-.logo-mark { width: 29px; height: 29px; color: var(--blue); }
+.brand { display: inline-flex; align-items: center; gap: 11px; white-space: nowrap; }
+.brand-logo { width: 66px; height: auto; flex: none; }
+.brand-name { font-size: 18px; line-height: 1; font-weight: 720; letter-spacing: -.05em; }
 nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
 nav a { color: var(--muted); font-size: 14px; font-weight: 550; transition: color .2s ease; }
 nav a:hover { color: var(--ink); }
@@ -189,8 +190,8 @@ footer { border-top: 1px solid var(--line); padding: 38px 0 22px; }
   .container { width: min(calc(100% - 30px), var(--max)); }
   .nav-wrap { height: 66px; }
   nav { display: none; }
-  .brand { font-size: 14px; }
-  .logo-mark { width: 25px; height: 25px; }
+  .brand-logo { width: 52px; }
+  .brand-name { font-size: 15px; }
   .nav-cta { padding: 9px 11px; font-size: 11px; }
   .hero { padding-top: 49px; }
   .hero-grid { gap: 15px; }
