@@ -65,10 +65,6 @@ h1 em { color: var(--blue); font-style: normal; white-space: nowrap; }
 .text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--ink); font-size: 14px; font-weight: 700; }
 .text-link svg { width: 17px; transition: transform .2s ease; }
 .text-link:hover svg { transform: translateX(3px); }
-.email-cta { width: max-content; display: inline-flex; align-items: center; gap: 8px; margin-top: 19px; border: 1px solid #dce3ec; border-radius: 9px; background: #fff; padding: 10px 13px; color: var(--muted); font-size: 12px; transition: border-color .2s ease, background .2s ease; }
-.email-cta:hover { border-color: #aac7ef; background: #f8fbff; }
-.email-cta svg { width: 16px; color: var(--blue); }
-.email-cta strong { color: var(--blue-dark); font-weight: 750; }
 .micro-proof { display: flex; align-items: center; gap: 7px; margin: 22px 0 0; color: #737c89; font-size: 12px; }
 .micro-proof svg { width: 15px; color: var(--green); }
 
@@ -217,7 +213,6 @@ footer { border-top: 1px solid var(--line); padding: 38px 0 22px; }
   .hero-lede { font-size: 16px; line-height: 1.6; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
   .button { width: 100%; }
-  .email-cta { width: 100%; justify-content: center; }
   .micro-proof { line-height: 1.5; }
   .hero-visual { padding-top: 28px; }
   .workflow-topbar { padding: 16px; }

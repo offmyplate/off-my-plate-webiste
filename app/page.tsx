@@ -44,11 +44,6 @@ export default function Home() {
                 </CtaLink>
                 <a className="text-link" href="#automate">See what&apos;s possible <Icon name="arrow" /></a>
               </div>
-              <CtaLink className="email-cta" href={emailContactUrl} location="hero_email">
-                <Icon name="email" />
-                <span>Prefer email?</span>
-                <strong>contact@offmyplate.io</strong>
-              </CtaLink>
               <p className="micro-proof"><Icon name="check" /> Built around your workflow. Integrated with your tools.</p>
             </div>
             <div className="hero-visual"><WorkflowVisual /></div>
@@ -113,10 +108,10 @@ export default function Home() {
             </div>
             <div className="final-action">
               <CtaLink className="button button-primary" href={contactUrl} location="final_cta">
-                Let&apos;s automate it
+                Pick a time to talk
               </CtaLink>
               <CtaLink className="button button-email" href={emailContactUrl} location="final_email">
-                <Icon name="email" /> Email us instead
+                <Icon name="email" /> Send us the details
               </CtaLink>
             </div>
           </div>
