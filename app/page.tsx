@@ -126,7 +126,7 @@ export default function Home() {
       <footer>
         <div className="container footer-wrap">
           <a className="brand" href="#top" aria-label="Back to top"><BrandMark /><span className="brand-name">Off My Plate</span></a>
-          <p>Custom AI workflows for work that shouldn&apos;t be manual.</p>
+          <p>Custom AI workflows for work that shouldn&apos;t be manual anymore.</p>
           <a href="mailto:contact@offmyplate.io">contact@offmyplate.io</a>
         </div>
         <div className="container footer-bottom"><span>© {new Date().getFullYear()} Off My Plate</span><span>AI workflow automation</span></div>
