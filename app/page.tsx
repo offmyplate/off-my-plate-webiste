@@ -10,7 +10,7 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: "Off My Plate",
   url: "https://offmyplate.io",
-  email: "hello@offmyplate.io",
+  email: "contact@offmyplate.io",
   description:
     "Custom AI workflow automation that connects existing business tools, data, and processes.",
   areaServed: "Worldwide",
@@ -119,7 +119,7 @@ export default function Home() {
         <div className="container footer-wrap">
           <a className="brand" href="#top" aria-label="Back to top"><LogoMark /><span>Off My Plate</span></a>
           <p>Custom AI workflows for work that shouldn&apos;t be manual.</p>
-          <a href="mailto:hello@offmyplate.io">hello@offmyplate.io</a>
+          <a href="mailto:contact@offmyplate.io">contact@offmyplate.io</a>
         </div>
         <div className="container footer-bottom"><span>© {new Date().getFullYear()} Off My Plate</span><span>AI workflow automation</span></div>
       </footer>

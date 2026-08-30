@@ -17,6 +17,8 @@ export function CtaLink({ children, location, onClick, ...props }: CtaLinkProps)
   return (
     <a
       {...props}
+      target="_blank"
+      rel="noopener noreferrer"
       onClick={(event) => {
         window.gtag?.("event", "cta_click", {
           cta_label: typeof children === "string" ? children : "Contact",

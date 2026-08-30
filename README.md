@@ -35,7 +35,7 @@ NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_CONTACT_URL=https://calendly.com/your-account/your-event
 ```
 
-Without a Google Analytics ID, no analytics script loads. Without a contact URL, CTAs open a prefilled email to `hello@offmyplate.io`.
+Without a Google Analytics ID, no analytics script loads. Without a contact URL, CTAs open a prefilled email to `contact@offmyplate.io`.
 
 ## Google Analytics 4
 
