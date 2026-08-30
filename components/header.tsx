@@ -1,6 +1,7 @@
 import { CtaLink } from "./cta-link";
 import { BrandMark } from "./brand-mark";
-import { contactUrl } from "@/lib/site";
+import { Icon } from "./icons";
+import { contactUrl, emailContactUrl } from "@/lib/site";
 
 export function Header() {
   return (
@@ -14,9 +15,14 @@ export function Header() {
           <a href="#automate">What we automate</a>
           <a href="#process">How it works</a>
         </nav>
-        <CtaLink className="nav-cta" href={contactUrl} location="header">
-          Discuss a workflow
-        </CtaLink>
+        <div className="nav-actions">
+          <CtaLink className="nav-email" href={emailContactUrl} location="header_email" aria-label="Email us at contact@offmyplate.io">
+            <Icon name="email" /><span>Email us</span>
+          </CtaLink>
+          <CtaLink className="nav-cta" href={contactUrl} location="header">
+            Discuss a workflow
+          </CtaLink>
+        </div>
       </div>
     </header>
   );

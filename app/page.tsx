@@ -4,7 +4,7 @@ import { Header } from "@/components/header";
 import { Icon } from "@/components/icons";
 import { WorkflowCards } from "@/components/workflow-cards";
 import { WorkflowVisual } from "@/components/workflow-visual";
-import { contactUrl } from "@/lib/site";
+import { contactUrl, emailContactUrl } from "@/lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -44,6 +44,11 @@ export default function Home() {
                 </CtaLink>
                 <a className="text-link" href="#automate">See what&apos;s possible <Icon name="arrow" /></a>
               </div>
+              <CtaLink className="email-cta" href={emailContactUrl} location="hero_email">
+                <Icon name="email" />
+                <span>Prefer email?</span>
+                <strong>contact@offmyplate.io</strong>
+              </CtaLink>
               <p className="micro-proof"><Icon name="check" /> Built around your workflow. Integrated with your tools.</p>
             </div>
             <div className="hero-visual"><WorkflowVisual /></div>
@@ -110,7 +115,9 @@ export default function Home() {
               <CtaLink className="button button-primary" href={contactUrl} location="final_cta">
                 Let&apos;s automate it
               </CtaLink>
-              <span>Opens your email app · No sales pitch</span>
+              <CtaLink className="button button-email" href={emailContactUrl} location="final_email">
+                <Icon name="email" /> Email us instead
+              </CtaLink>
             </div>
           </div>
         </section>
