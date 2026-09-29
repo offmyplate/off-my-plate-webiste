@@ -32,10 +32,10 @@ Copy `.env.example` to `.env.local` for local development. Both environment vari
 
 ```bash
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-NEXT_PUBLIC_CONTACT_URL=https://calendly.com/your-account/your-event
+NEXT_PUBLIC_CONTACT_URL=https://calendar.app.google/AsA9ssx8ciQzb1zu8
 ```
 
-Without a Google Analytics ID, no analytics script loads. Without a contact URL, CTAs open a prefilled email to `contact@offmyplate.io`.
+Without a Google Analytics ID, no analytics script loads. Without a contact URL override, primary CTAs use the default Google Calendar booking page.
 
 ## Google Analytics 4
 
@@ -46,12 +46,12 @@ Without a Google Analytics ID, no analytics script loads. Without a contact URL,
 
 The analytics script is loaded only when that variable exists. Header, hero, and final contact CTAs emit a `cta_click` event with `cta_label` and `cta_location` parameters.
 
-## Use Calendly for the CTAs
+## Configure Google Calendar for the CTAs
 
-1. In Calendly, open the event type visitors should book and copy its public scheduling URL.
+1. In Google Calendar, open the appointment schedule visitors should book and copy its public booking URL.
 2. In Railway, open the service's **Variables** page.
-3. Add `NEXT_PUBLIC_CONTACT_URL` with the full URL, for example `https://calendly.com/offmyplate/discovery`.
-4. Redeploy the service. Every primary CTA will now open that Calendly page, and click tracking will continue to work.
+3. Add `NEXT_PUBLIC_CONTACT_URL` with the full URL, for example `https://calendar.app.google/AsA9ssx8ciQzb1zu8`.
+4. Redeploy the service. Every primary CTA will now open that Google Calendar booking page, and click tracking will continue to work.
 
 For local testing, add the same variable to `.env.local` and restart `npm run dev`.
 
